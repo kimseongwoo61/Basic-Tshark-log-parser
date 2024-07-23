@@ -60,4 +60,5 @@ void Analyzing(char* analysisFile, char* temp, char* dosSignature) {
 
 ### For more information
 
-- **Code/Feature Specification**:  
+- **Code/Feature Specification**:  [Link](https://github.com/kimseongwoo61/Basic-Tshark-log-parser/blob/main/specification.MD)
+
