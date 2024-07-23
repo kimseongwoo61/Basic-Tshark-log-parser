@@ -35,9 +35,7 @@ The parsing library does not use any third-party libraries and relies solely on 
 The following is the list of libraries used:
 
 ```c
-c코드 복사
 <direct.h>, <io.h>, <process.h>, <stdio.h>, <stdlib.h>, <string.h>, <time.h>, <Windows.h>, <sys/types.h>
-
 ```
 
 ### 1.4 Library Internal Code Management Structure
@@ -53,11 +51,9 @@ c코드 복사
 ### 2.1 Structures and Global Variables
 
 ```c
-c코드 복사
 extern HANDLE hthread[1000];
 extern CRITICAL_SECTION cs;
 extern parsingResult* firstNode;
-
 ```
 
 - **hthread** : A global array storing thread handles, used for managing processing response time and termination.
@@ -65,7 +61,6 @@ extern parsingResult* firstNode;
 - **firstNode** : A pointer variable holding the starting address of the list, used for node insertion operations by threads.
 
 ```c
-c코드 복사
 typedef struct pcapText_Line {
 	char seqNum[10];
 	char time[20];
@@ -93,7 +88,6 @@ typedef struct arg {
 } file_parsing;
 
 typedef struct _finddata_t FILE_SEARCH;
-
 ```
 
 - **pcapText_Line** : Structure for storing parsed results from tshark logs.
@@ -103,12 +97,10 @@ typedef struct _finddata_t FILE_SEARCH;
 ### 2.2 File Management
 
 ```c
-c코드 복사
 void analyze_File(char* fileDirectory, F_info* attribute);
 unsigned int getLine_Count(FILE* fp);
 unsigned int getFile_Size(FILE* fp);
 int fileSpliter(char* inputDir, char* baseDir, int line);
-
 ```
 
 - *void analyze_File(char fileDirectory, F_info* attribute);**
@@ -137,12 +129,10 @@ int fileSpliter(char* inputDir, char* baseDir, int line);
 ### 2.3 List Operations
 
 ```c
-c코드 복사
 parsingResult* List_create();
 void List_insert(parsingResult** target, parsingResult* newNode);
 void List_delete(parsingResult* target);
 int List_count(parsingResult* target);
-
 ```
 
 - *parsingResult List_create();*
@@ -165,11 +155,9 @@ int List_count(parsingResult* target);
 ### 2.4 Threads
 
 ```c
-c코드 복사
 void readThread(char* path, FILE_SEARCH file_search, char* search_point, int index);
 parsingResult* GetfileList(char* path, char* search_point);
 unsigned int __stdcall Thread_R(void* lpParam);
-
 ```
 
 - *void readThread(char path, FILE_SEARCH file_search, char* search_point, int index);**
@@ -188,12 +176,10 @@ unsigned int __stdcall Thread_R(void* lpParam);
 ### 2.5 Pattern Search
 
 ```c
-c코드 복사
 void logScaner(char* getLine, pcapInfo* output);
 int landAttack(pcapInfo* checker);
 int suspicious_syn_Flood(pcapInfo* checker);
 int suspicious_Smurf(char* broadcastAddr, pcapInfo* checker);
-
 ```
 
 - *void logScaner(char getLine, pcapInfo* output);**
