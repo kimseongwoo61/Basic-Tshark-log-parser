@@ -275,11 +275,14 @@ void Analyzing(char* analysisFile, char* temp, char* dosSignature) {
 
 ### (Left - Thread-based operation, Right - Single-process operation)
 
-![https://www.notion.soTshark%20log%20parser%20(based%20in%20thread%20list!!!)%201092382dbb9e45d5bbc4723b45164897/Untitled%201.png](https://www.notion.soTshark%20log%20parser%20(based%20in%20thread%20list!!!)%201092382dbb9e45d5bbc4723b45164897/Untitled%201.png)
+<p align="center">
+  <img src="https://github.com/kimseongwoo61/Basic-Tshark-log-parser/blob/main/Tshark%20log%20parser%20(based%20in%20thread%20list!!!)%201092382dbb9e45d5bbc4723b45164897/Untitled%201.png" width="50%" />
+  <br/>
+  <img src="https://github.com/kimseongwoo61/Basic-Tshark-log-parser/blob/main/Tshark%20log%20parser%20(based%20in%20thread%20list!!!)%201092382dbb9e45d5bbc4723b45164897/Untitled%202.png" width="50%" />
+  <br/>
+  <img src="https://github.com/kimseongwoo61/Basic-Tshark-log-parser/blob/main/Tshark%20log%20parser%20(based%20in%20thread%20list!!!)%201092382dbb9e45d5bbc4723b45164897/Untitled%203.png" width="50%" />
+</p>
 
-![https://www.notion.soTshark%20log%20parser%20(based%20in%20thread%20list!!!)%201092382dbb9e45d5bbc4723b45164897/Untitled%202.png](https://www.notion.soTshark%20log%20parser%20(based%20in%20thread%20list!!!)%201092382dbb9e45d5bbc4723b45164897/Untitled%202.png)
-
-![https://www.notion.soTshark%20log%20parser%20(based%20in%20thread%20list!!!)%201092382dbb9e45d5bbc4723b45164897/Untitled%203.png](https://www.notion.soTshark%20log%20parser%20(based%20in%20thread%20list!!!)%201092382dbb9e45d5bbc4723b45164897/Untitled%203.png)
 
 From the test results, it is evident that thread-based operations provide faster search results compared to single-process operations.
 
