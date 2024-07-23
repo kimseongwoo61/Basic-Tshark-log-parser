@@ -200,7 +200,6 @@ int suspicious_Smurf(char* broadcastAddr, pcapInfo* checker);
         - Failure: 0 (Other pattern)
 - *int suspicious_Smurf(char broadcastAddr, pcapInfo* checker);**
 
-# 제목 없음
 
 ## Chapter 3: Test Code
 
