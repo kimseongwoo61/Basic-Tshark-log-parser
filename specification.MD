@@ -262,7 +262,7 @@ void Analyzing(char* analysisFile, char* temp, char* dosSignature) {
 ### 3.2 Test Results
 
 ```c
-		1   0.000000 64.233.189.188 172.30.1.26  TCP 66 443 58964 [ACK] Seq=1 Ack=1 Win=265 Len=0 SLE=0 SRE=1
+    1   0.000000 64.233.189.188 172.30.1.26  TCP 66 443 58964 [ACK] Seq=1 Ack=1 Win=265 Len=0 SLE=0 SRE=1
     2   0.266836  172.30.1.26 34.64.4.10   UDP 75 53615 443 Len=33
     3   0.300480   34.64.4.10 172.30.1.26  UDP 67 443 53615 Len=25
     4   5.836485  172.30.1.26 13.225.125.157 TCP 54 58935 80 [FIN, ACK] Seq=1 Ack=1 Win=517 Len=0
